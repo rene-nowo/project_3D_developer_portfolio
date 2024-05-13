@@ -71,8 +71,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>Meine Arbeit</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projekte.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -80,11 +80,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Im folgenden ein paar Beispiel Projekte, welche bereits umgesetzt wurden. Ich hatte schon die Chance mit vielen Systemen zu arbeiten.
+          Unter anderem mit Shopify, Amazon, Ebay, Shopware, Otto und noch vielen mehr. Eine Anbindung an diese Systeme zur Prozessautomatisierung werden im Hand umdrehen erledigt.
+          Durch meine mehrjährige Erfahrung als CTO in einem großen E-Commerce Unternehmen, bin ich mit der Unternehmens- und Anwendersicht bestens vertraut und kann mich hervorragend 
+          in diese hineinversetzen. Die Kommunikation ist einfach und schnell. Falls Sie Fragen haben, zögern Sie nicht mir eine Nachricht über das Kontaktforumal dazulassen. 
         </motion.p>
       </div>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -25,6 +25,20 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navigateSlowly = (nav) => {
+    navigate("/");
+    return <a href={`#${nav.id}`}>{nav.title}</a>;
+  }
+  const getNavLink = (nav) => {
+    if (nav.id === "impressum" || nav.id === "datenschutz" || nav.id === "amazon") {
+      return <Link to={`/${nav.id}`}>{nav.title}</Link>;
+    } else if (location.pathname !== "/" && nav.id !== "impressum") {
+      return <Link to={`/#${nav.id}`}>{nav.title}</Link>; 
+    } else {
+      return <a href={`#${nav.id}`}>{nav.title}</a>;
+    }
+  };
+
   return (
     <nav
       className={`${
@@ -42,23 +56,26 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-15 h-14 object-contain' />
+          {/* A JSX comment 
+          
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Denqfabrik &nbsp;
+            <span className='sm:block hidden'> | ERP-System Developer</span>
           </p>
+          
+          */}
+          
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {getNavLink(nav)}
             </li>
           ))}
         </ul>
@@ -88,7 +105,14 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "impressum" ? (
+                <Link to="/impressum">{nav.title}</Link>
+              ) : (
+                nav.id === "datenschutz" ? (
+                  <Link to="/datenschutz">{nav.title}</Link>
+                  ):(
+                  <a href={`#${nav.id}`}>{nav.title}</a>)
+              )}
                 </li>
               ))}
             </ul>

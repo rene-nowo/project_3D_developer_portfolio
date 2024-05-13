@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo-nobackground.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -7,6 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+
+
+import python from "./tech/python.png";
+import rust from "./tech/rust.png";
+import go from "./tech/go.png";
+import django from "./tech/django.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -21,14 +27,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import efulfillment from "./company/efulfillment.png";
+import denqfabrik from "./company/denqfabrik.png";
+import synesty from "./company/synesty.jpeg";
+import plentymarkets from "./company/plentymarkets.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import amazonvendorapp from "./projects/amazonvendorapp.png";
+import monitoringapp from "./projects/monitoringapp.png";
+import repricerapp from "./projects/repricerapp.png";
 
 export {
   logo,
@@ -52,11 +58,15 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  efulfillment,
+  plentymarkets,
+  synesty,
+  denqfabrik,
+  python,
+  rust,
+  go,
+  django,
+  amazonvendorapp,
+  monitoringapp,
+  repricerapp
 };

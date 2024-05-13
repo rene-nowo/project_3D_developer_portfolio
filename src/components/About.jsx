@@ -39,21 +39,19 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Einführung</p>
+        <h2 className={styles.sectionHeadText}>Überblick.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Als erfahrener Softwareentwickler habe ich mich auf Python und JavaScript spezialisiert, mit vertieften Kenntnissen in Django und React, um leistungsstarke ERP-Systeme, Schnittstellenautomatisierungen und Webanwendungen zu entwickeln.
+        Mein Ansatz kombiniert technische Expertise mit einer schnellen Auffassungsgabe, um komplexe Herausforderungen zu meistern und benutzerzentrierte Lösungen zu schaffen. 
+        Ich bin auch leidenschaftlich daran interessiert, mit Rust und Go zu arbeiten, um innovative und effiziente Software zu liefern. 
+        Lassen Sie uns zusammenarbeiten, um Ihre Ideen mit präziser und effektiver Technologie zum Leben zu erwecken!
       </motion.p>
-
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

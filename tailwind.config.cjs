@@ -21,6 +21,21 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      // Add custom components styles
+      components: {
+        'cookie-banner2': {
+          backgroundColor: '#f8f9fa',
+          position: 'fixed',
+          bottom: '0',
+          width: '100%',
+          textAlign: 'center',
+          padding: '10px',
+          'button': {
+            marginLeft: '10px',
+            padding: '5px 15px',
+          },
+        },
+      },
     },
   },
   plugins: [],
