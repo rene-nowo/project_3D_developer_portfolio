@@ -30,8 +30,6 @@ const App = () => {
     {showCookieBanner && <CookieBanner onAccept={handleAcceptCookies} />}
       <Navbar />
 
-      
-
       <Routes>
         <Route path="/" element={
           <div className='relative z-0 bg-primary'>

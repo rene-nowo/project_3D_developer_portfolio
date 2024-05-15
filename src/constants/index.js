@@ -280,4 +280,82 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+const amazonServices= [
+  {
+    title: "100% vollständige ERP Integration Ihrer Wahl",
+    icon: web,
+  },
+  {
+    title: "Anbindung zu Amazon Seller und Vendor",
+    icon: web,
+  },
+  {
+    title: "DSGVO-Konform & Hohe Robustheit",
+    icon: web,
+  },
+  {
+    title: "KI-basiertes Repricing-Tool für wettbewerbslastige Produkte",
+    icon: web,
+  },
+];
+
+const amazonProjects = [
+  {
+    title: "Automatisierte Auftrags-Synchronisation",
+    image: "path/to/your/order-sync-image.jpg",
+    description: "Vollständig automatisierter Bestellprozess, der mit Ihrem ERP-System verbunden ist:",
+    tags: [
+      { name: "Bestellimport, Aktualisierung der Tracking-Nummern, Bestandsaktualisierungen", color: "blue-text-gradient" },
+      { name: "Vollständig automatisierte Bearbeitung von Rücksendungen und Gutschriften", color: "green-text-gradient" }
+    ]
+  },
+  {
+    title: "Produkterstellung",
+    image: "path/to/your/product-creation-image.jpg",
+    description: "Einfache Erstellung von Listings nur mit GTIN:",
+    tags: [
+      { name: "Vollständig unterstützte Produkterstellung neuer Produkte", color: "pink-text-gradient" },
+      { name: "KI-generierte Inhalte in mehreren Sprachen mit automatischer Übersetzung und Keyword-Anpassung", color: "orange-text-gradient" }
+    ]
+  },
+  {
+    title: "Sicherheit",
+    image: "",
+    description: "Unsere Software gewährleistet die höchsten Sicherheitsstandards:",
+    tags: [
+      { name: "Zero-Knowledge-Architektur", color: "blue-text-gradient" },
+      { name: "Sehr robuste und sichere Software basierend auf der Programmiersprache Rust", color: "pink-text-gradient" },
+      { name: "Konform mit DSGVO-Standards", color: "orange-text-gradient" }
+    ]
+  },
+  {
+    title: "KI-basiertes Repricing",
+    image: "path/to/your/repricing-image.jpg",
+    description: "Intelligenter Amazon-Repricer, um Ihre Konkurrenten auszuspielen und die Buy Box die meiste Zeit zu gewinnen:",
+    tags: [
+      { name: "Umfassende Analyse der Produktlistings und Ermittlung der Zeiten zur Preisänderung", color: "green-text-gradient" },
+      { name: "Verfolgung der Preise der Konkurrenz und Vorhersage der nächsten Produktpreise", color: "orange-text-gradient" }
+    ]
+  },
+  {
+    title: "Datenanalyse und Berichterstattung",
+    image: "path/to/your/data-analysis-image.jpg",
+    description: "Umfassende Analyse und Berichterstattung über Ihre Verkaufsleistung auf Amazon:",
+    tags: [
+      { name: "Detaillierte Verkaufsberichte und Trendanalysen", color: "blue-text-gradient" },
+      { name: "Anpassbare Dashboards und KPIs zur Überwachung der Geschäftsleistung", color: "green-text-gradient" }
+    ]
+  },
+  {
+    title: "Kundensupport-Integration",
+    image: "path/to/your/customer-support-image.jpg",
+    description: "Integrierte Lösung für schnellen und effizienten Kundensupport:",
+    tags: [
+      { name: "Automatisierte Antworten auf häufige Kundenanfragen", color: "pink-text-gradient" },
+      { name: "Integration mit führenden CRM-Systemen zur Verwaltung von Kundenanfragen und Support-Tickets", color: "orange-text-gradient" }
+    ]
+  }
+];
+
+export { services, technologies, experiences, testimonials, projects, amazonServices, amazonProjects };

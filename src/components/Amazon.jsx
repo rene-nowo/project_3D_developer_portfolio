@@ -1,23 +1,23 @@
 // src/components/Amazon.js
 
 import React from 'react';
+import Contact from './Contact';
+import AmazonKeyPoints from './AmazonKeyPoints';
+import AmazonInsights from './AmazonInsights';
+
 
 const Amazon = () => {
 
-  const amazonStyle = {
-    textAlign: 'center',
-    margin: '50px auto',
-    padding: '20px',
-    maxWidth: '800px', // You can adjust this as needed
-  };
-
-
   return (
-    <div style={amazonStyle} className='amazon'>
-    <h1>Welcome to the Amazon Info Website</h1>
-    <p>This site provides example projects showcasing various integrations and solutions for Amazon-related services.</p>
-  </div>
-);
+
+    <div className='relative z-0 bg-primary'>
+      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center' >
+        <AmazonKeyPoints/>
+        <AmazonInsights/>  
+        <Contact />
+      </div>
+    </div>
+  );
 };
 
 export default Amazon;
