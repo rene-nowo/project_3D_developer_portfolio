@@ -22,6 +22,8 @@ import {
   amazonvendorapp,
   monitoringapp,
   repricerapp,
+  amazon,
+  security
 } from "../assets";
 
 export const navLinks = [
@@ -288,11 +290,13 @@ const amazonServices= [
   },
   {
     title: "Anbindung zu Amazon Seller und Vendor",
-    icon: web,
+    icon: amazon,
+    src:"https://icons8.com/icon/21295/amazon"
   },
   {
     title: "DSGVO-Konform & Hohe Robustheit",
-    icon: web,
+    src:"https://img.icons8.com/bubbles/50/cyber-security.png",
+    alt:"cyber-security"
   },
   {
     title: "KI-basiertes Repricing-Tool für wettbewerbslastige Produkte",

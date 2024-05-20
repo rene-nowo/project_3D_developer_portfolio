@@ -30,11 +30,9 @@ const ProjectCard = ({
               src={image}
               alt='project_image'
               className='w-full h-full object-cover rounded-2xl'
-            />
-  
-        
+              target="_blank"
+            />        
           </div>
-  
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[24px]'>{title}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>

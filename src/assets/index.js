@@ -36,6 +36,8 @@ import amazonvendorapp from "./projects/amazonvendorapp.png";
 import monitoringapp from "./projects/monitoringapp.png";
 import repricerapp from "./projects/repricerapp.png";
 
+import amazon from "./amazon.png";
+import security from "./security.png";
 export {
   logo,
   backend,
@@ -68,5 +70,7 @@ export {
   django,
   amazonvendorapp,
   monitoringapp,
-  repricerapp
+  repricerapp,
+  amazon,
+  security
 };
